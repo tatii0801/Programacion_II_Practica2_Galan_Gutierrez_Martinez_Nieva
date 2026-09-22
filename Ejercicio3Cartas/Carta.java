@@ -1,15 +1,19 @@
 package Ejercicio3Cartas;
 
-// Representa una carta española
 public class Carta {
 
     private int numero;
     private String palo;
 
     public Carta(int numero, String palo) {
-
         this.numero = numero;
         this.palo = palo;
+    }
+
+    @Override
+    public String toString() {
+        return numero + " de " + palo;
+
     }
 
     public int getNumero() {
@@ -20,9 +24,12 @@ public class Carta {
         return palo;
     }
 
-    @Override
-    public String toString() {
-
-        return numero + " de " + palo;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
+
+    public void setPalo(String palo) {
+        this.palo = palo;
+    }
+
 }
