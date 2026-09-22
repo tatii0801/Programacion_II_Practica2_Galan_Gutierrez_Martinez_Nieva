@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module historia_clinica {
-}
